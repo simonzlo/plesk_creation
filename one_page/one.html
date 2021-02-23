@@ -8,42 +8,24 @@
 
       * {box-sizing: border-box;}
 
-      .one {
+      .one, .two, .three, .four, .five {
         width: 345px;
         height: 180px;
         /* border: 1px solid; */
         position: relative;
         justify-content: space-between;
+        border-bottom: 1px solid black;
+
       }
-      .one_in {
+      .one_in, .two_in, .three_in, .four_in, .five_in {
         width: 0;
         height: 100%;
         background-color: black;
-        position: absolut;
+        position: absolute;
         left: 0;
-        transition: 10.1s linear;
+        transition: 5.1s linear;
       }
 
-
-      .two {
-        width: 345px;
-        height: 180px;
-        /* border: 1px solid; */
-        position: relative;
-        justify-content: space-between;
-      }
-      .two_in {
-        width: 0;
-        height: 100%;
-        background-color: black;
-        position: absolut;
-        left: 0;
-        transition: 10.1s linear;
-      }
-
-      .red{
-        background-color: orange;
-      }
     </style>
    </head>
 
@@ -69,8 +51,42 @@
    })
    </script>
 
+   <script type="text/javascript">
+       $(document).ready(function(){
+
+       $(".three").click(function(){
+       setTimeout(function(){
+       $(".three_in").css({"width":"100%"})
+       }, 400);
+     });
+    })
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+        $(".four").click(function(){
+        setTimeout(function(){
+        $(".four_in").css({"width":"100%"})
+        }, 400);
+      });
+     })
+     </script>
+
+     <script type="text/javascript">
+         $(document).ready(function(){
+
+         $(".five").click(function(){
+         setTimeout(function(){
+         $(".five_in").css({"width":"100%"})
+         }, 400);
+       });
+      })
+      </script>
+
 
   <body>
+
     <div class="one">
     <div class="one_in"></div>
     </div>
@@ -78,4 +94,19 @@
     <div class="two">
     <div class="two_in"></div>
     </div>
+
+    <div class="three">
+    <div class="three_in"></div>
+    </div>
+
+    <div class="four">
+    <div class="four_in"></div>
+    </div>
+
+    <div class="five">
+    <div class="five_in"></div>
+    </div>
+
+
+
   </body>
