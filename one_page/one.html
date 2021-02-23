@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style media="screen">
+
+      * {box-sizing: border-box;}
+
+      .one {
+        width: 345px;
+        height: 180px;
+        /* border: 1px solid; */
+        position: relative;
+        justify-content: space-between;
+      }
+      .one_in {
+        width: 0;
+        height: 100%;
+        background-color: black;
+        position: absolut;
+        left: 0;
+        transition: 10.1s linear;
+      }
+
+
+      .two {
+        width: 345px;
+        height: 180px;
+        /* border: 1px solid; */
+        position: relative;
+        justify-content: space-between;
+      }
+      .two_in {
+        width: 0;
+        height: 100%;
+        background-color: black;
+        position: absolut;
+        left: 0;
+        transition: 10.1s linear;
+      }
+
+      .red{
+        background-color: orange;
+      }
+    </style>
+   </head>
+
+ <script type="text/javascript">
+     $(document).ready(function(){
+
+     $(".one").click(function(){
+     setTimeout(function(){
+     $(".one_in").css({"width":"100%"})
+     }, 400);
+   });
+  })
+  </script>
+
+  <script type="text/javascript">
+      $(document).ready(function(){
+
+      $(".two").click(function(){
+      setTimeout(function(){
+      $(".two_in").css({"width":"100%"})
+      }, 400);
+    });
+   })
+   </script>
+
+
+  <body>
+    <div class="one">
+    <div class="one_in"></div>
+    </div>
+
+    <div class="two">
+    <div class="two_in"></div>
+    </div>
+  </body>
