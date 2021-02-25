@@ -10,25 +10,38 @@
         box-sizing: border-box;
       }
 
-      .one,
-      .two,
-      .three,
-      .four,
-      .five {
-        width: 345px;
-        height: 180px;
-        /* border: 1px solid; */
-        position: relative;
-        justify-content: space-between;
-        border-bottom: 1px solid black;
-
+      .one_page {
+        display: flex;
+        width: 1440px;
+        height: 900px
       }
 
-      .one_in,
-      .two_in,
-      .three_in,
-      .four_in,
-      .five_in {
+      .column1, .column2, .column3, .column4  {
+        width: 360px;
+        height: 900px;
+      }
+
+      .one,.one_a, .one_b,
+      .two, .two_a, .two_b,
+      .three, .three_a, .three_b,
+      .four, .four_a, .four_b,
+      .five, .five_a, .five_b, .one_c, .two_c,
+      .three_c, .four_c,
+      .five_c {
+        width: 360px;
+        height: 180px;
+        /* border: 1px solid; */
+        position:relative;
+        border-bottom: 1px solid black;
+      }
+
+      .one_in, .one_in_a, .one_in_b,
+      .two_in, .two_in_a, .two_in_b,
+      .three_in, .three_in_a, .three_in_b,
+      .four_in, .four_in_a, .four_in_b,
+      .five_in, .five_in_a, .five_in_b, .one_in_c, .two_in_c,
+      .three_in_c, .four_in_c,
+      .five_in_c {
         width: 0;
         height: 100%;
         background-color: black;
@@ -40,99 +53,332 @@
     </style>
   </head>
 
+
   <script type="text/javascript">
     $(document).ready(function() {
 
-      $(".one").click(function() {
         setTimeout(function() {
           $(".one_in").css({
             "width": "100%"
           })
-        }, 400);
-      });
-    })
-
+        }, 2000);
+     })
   </script>
 
   <script type="text/javascript">
     $(document).ready(function() {
 
-      $(".two").click(function() {
         setTimeout(function() {
           $(".two_in").css({
             "width": "100%"
           })
-        }, 400);
-      });
-    })
-
+        }, 1600);
+     })
   </script>
 
   <script type="text/javascript">
     $(document).ready(function() {
 
-      $(".three").click(function() {
         setTimeout(function() {
           $(".three_in").css({
             "width": "100%"
           })
-        }, 400);
-      });
-    })
-
+        }, 1200);
+     })
   </script>
 
   <script type="text/javascript">
     $(document).ready(function() {
 
-      $(".four").click(function() {
         setTimeout(function() {
           $(".four_in").css({
             "width": "100%"
           })
-        }, 400);
-      });
-    })
-
+        }, 800);
+     })
   </script>
 
   <script type="text/javascript">
     $(document).ready(function() {
 
-      $(".five").click(function() {
         setTimeout(function() {
           $(".five_in").css({
             "width": "100%"
           })
         }, 400);
-      });
-    })
+     })
+  </script>
 
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          $(".one_in_a").css({
+            "width": "100%"
+          })
+        }, 2000);
+     })
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          $(".two_in_a").css({
+            "width": "100%"
+          })
+        }, 1600);
+     })
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          $(".three_in_a").css({
+            "width": "100%"
+          })
+        }, 1200);
+     })
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          $(".four_in_a").css({
+            "width": "100%"
+          })
+        }, 800);
+     })
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          $(".five_in_a").css({
+            "width": "100%"
+          })
+        }, 400);
+     })
+  </script>
+
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          $(".one_in_b").css({
+            "width": "100%"
+          })
+        }, 400);
+     })
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          $(".two_in_b").css({
+            "width": "100%"
+          })
+        }, 800);
+     })
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          $(".three_in_b").css({
+            "width": "100%"
+          })
+        }, 1200);
+     })
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          $(".four_in_b").css({
+            "width": "100%"
+          })
+        }, 1600);
+     })
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          $(".five_in_b").css({
+            "width": "100%"
+          })
+        }, 2000);
+     })
+  </script>
+
+
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          $(".one_in_c").css({
+            "width": "100%"
+          })
+        }, 2000);
+     })
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          $(".two_in_c").css({
+            "width": "100%"
+          })
+        }, 1600);
+     })
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          $(".three_in_c").css({
+            "width": "100%"
+          })
+        }, 1200);
+     })
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          $(".four_in_c").css({
+            "width": "100%"
+          })
+        }, 800);
+     })
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function() {
+          $(".five_in_c").css({
+            "width": "100%"
+          })
+        }, 400);
+     })
   </script>
 
 
   <body>
+    <div class="one_page">
 
-    <div class="one">
-      <div class="one_in"></div>
+      <div class="column1">
+        <div class="one">
+          <div class="one_in"></div>
+        </div>
+
+        <div class="two">
+          <div class="two_in"></div>
+        </div>
+
+        <div class="three">
+          <div class="three_in"></div>
+        </div>
+
+        <div class="four">
+          <div class="four_in"></div>
+        </div>
+
+        <div class="five">
+          <div class="five_in"></div>
+        </div>
+      </div>
+
+
+
+      <div class="column2">
+        <div class="one_a">
+          <div class="one_in_a"></div>
+        </div>
+
+        <div class="two_a">
+          <div class="two_in_a"></div>
+        </div>
+
+        <div class="three_a">
+          <div class="three_in_a"></div>
+        </div>
+
+        <div class="four_a">
+          <div class="four_in_a"></div>
+        </div>
+
+        <div class="five_a">
+          <div class="five_in_a"></div>
+        </div>
+      </div>
+
+      <div class="column3">
+        <div class="one_c">
+          <div class="one_in_c"></div>
+        </div>
+
+        <div class="two_c">
+          <div class="two_in_c"></div>
+        </div>
+
+        <div class="three_c">
+          <div class="three_in_c"></div>
+        </div>
+
+        <div class="four_c">
+          <div class="four_in_c"></div>
+        </div>
+
+      <div class="five_c">
+        <div class="five_in_c"></div>
+      </div>
+      </div>
+
+
+
+      <div class="column4">
+        <div class="one_c">
+          <div class="one_in_c"></div>
+        </div>
+
+        <div class="two_c">
+          <div class="two_in_c"></div>
+        </div>
+
+        <div class="three_c">
+          <div class="three_in_c"></div>
+        </div>
+
+        <div class="four_c">
+          <div class="four_in_c"></div>
+        </div>
+
+        <div class="five_c">
+          <div class="five_in_c"></div>
+        </div>
+
     </div>
-
-    <div class="two">
-      <div class="two_in"></div>
-    </div>
-
-    <div class="three">
-      <div class="three_in"></div>
-    </div>
-
-    <div class="four">
-      <div class="four_in"></div>
-    </div>
-
-    <div class="five">
-      <div class="five_in"></div>
-    </div>
-
-
-
+  </div>
   </body>
