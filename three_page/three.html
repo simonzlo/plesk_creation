@@ -13,9 +13,15 @@
     .quarter {
     width: 480px;
     height: 390px;
-    background-color: green;
     position: relative;
-    transform: rotate(90deg)
+    transform: rotate(180deg)
+    }
+
+    .quarter_two {
+    width: 480px;
+    height: 390px;
+    position: relative;
+    transform: rotate(180deg)
     }
 
     </style>
@@ -32,12 +38,31 @@
 })
   </script>
 
+  <script type="text/javascript">
+  $(document).ready(function() {
+
+  let rotate = 0;
+    $(".quarter_two").click(function(){rotate += 180;
+    $(this).css({"transform": "rotate("+rotate+"deg)"
+   });
+ })
+})
+  </script>
+
   <body>
     <div class="quarter">
       <object
           type="images"
           data="puzzle_one.svg">
-         <img src="images/puzzle_one.svg">
+         <img src="stylesheets/images/puzzle_one.svg">
+        </object>
+    </div>
+
+    <div class="quarter_two">
+      <object
+          type="images"
+          data="puzzle_one.svg">
+         <img src="stylesheets/images/puzzle_one.svg">
         </object>
     </div>
 
