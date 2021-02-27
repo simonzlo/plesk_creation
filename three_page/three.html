@@ -10,18 +10,72 @@
         box-sizing: border-box;
       }
 
-    .quarter {
-    width: 480px;
-    height: 390px;
-    position: relative;
-    transform: rotate(180deg)
+    .page_one {
+      width: 1440px;
+      height: 60px;
+    }
+
+    .page_two {
+      width: 1440px;
+      height: 390px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .page_three {
+      width: 1440px;
+      height: 390px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+    .quarter_one {
+      width: 480px;
+      height: 390px;
+      display: inline-block;
+      position: relative;
+      transform: rotate(180deg)
     }
 
     .quarter_two {
-    width: 480px;
-    height: 390px;
-    position: relative;
-    transform: rotate(180deg)
+      width: 480px;
+      height: 390px;
+      display: inline-block;
+      position: relative;
+      transform: rotate(180deg)
+    }
+
+    .quarter_three {
+      width: 480px;
+      height: 390px;
+      display: inline-block;
+      position: relative;
+      transform: rotate(180deg)
+    }
+
+    .quarter_four {
+      width: 480px;
+      height: 390px;
+      display: inline-block;
+      position: relative;
+      transform: rotate(180deg)
+    }
+
+    .quarter_five {
+      width: 480px;
+      height: 390px;
+      display: inline-block;
+      position: relative;
+      transform: rotate(180deg)
+    }
+
+    .quarter_six {
+      width: 480px;
+      height: 390px;
+      display: inline-block;
+      position: relative;
+      transform: rotate(180deg)
     }
 
     </style>
@@ -29,41 +83,72 @@
 
   <script type="text/javascript">
   $(document).ready(function() {
-
   let rotate = 0;
-    $(".quarter").click(function(){rotate += 180;
+    $(".quarter_one, .quarter_two, .quarter_three, .quarter_four, .quarter_five, .quarter_six").click(function(){rotate += 180;
     $(this).css({"transform": "rotate("+rotate+"deg)"
    });
  })
 })
   </script>
 
-  <script type="text/javascript">
-  $(document).ready(function() {
 
-  let rotate = 0;
-    $(".quarter_two").click(function(){rotate += 180;
-    $(this).css({"transform": "rotate("+rotate+"deg)"
-   });
- })
-})
-  </script>
 
   <body>
-    <div class="quarter">
-      <object
-          type="images"
-          data="puzzle_one.svg">
-         <img src="stylesheets/images/puzzle_one.svg">
-        </object>
+    <div class="page_one">
+
+    </div>
+    <div class="page_two">
+      <div class="quarter_one">
+        <object
+            type="images"
+            data="puzzle_one.svg">
+           <img src="stylesheets/images/puzzle_one.svg">
+          </object>
+      </div>
+
+      <div class="quarter_two">
+        <object
+            type="images"
+            data="puzzle_two.svg">
+           <img src="stylesheets/images/puzzle_two.svg">
+          </object>
+      </div>
+
+      <div class="quarter_three">
+        <object
+            type="images"
+            data="puzzle_three.svg">
+           <img src="stylesheets/images/puzzle_three.svg">
+          </object>
+      </div>
     </div>
 
-    <div class="quarter_two">
-      <object
-          type="images"
-          data="puzzle_one.svg">
-         <img src="stylesheets/images/puzzle_one.svg">
-        </object>
-    </div>
 
+
+
+      <div class="page_three">
+        <div class="quarter_four">
+          <object
+              type="images"
+              data="puzzle_four.svg">
+             <img src="stylesheets/images/puzzle_four.svg">
+            </object>
+        </div>
+
+      <div class="quarter_five">
+        <object
+            type="images"
+            data="puzzle_five.svg">
+           <img src="stylesheets/images/puzzle_five.svg">
+          </object>
+      </div>
+
+      <div class="quarter_six">
+        <object
+            type="images"
+            data="puzzle_six.svg">
+           <img src="stylesheets/images/puzzle_six.svg">
+        </object>
+      </div>
+      </div>
   </body>
