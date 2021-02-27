@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+      }
+
+    .quarter {
+    width: 480px;
+    height: 390px;
+    background-color: green;
+    position: relative;
+    transform: rotate(90deg)
+    }
+
+    </style>
+  </head>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+
+  let rotate = 0;
+    $(".quarter").click(function(){rotate += 180;
+    $(this).css({"transform": "rotate("+rotate+"deg)"
+   });
+ })
+})
+  </script>
+
+  <body>
+    <div class="quarter">
+      <object
+          type="images"
+          data="puzzle_one.svg">
+         <img src="images/puzzle_one.svg">
+        </object>
+    </div>
+
+  </body>
