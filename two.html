@@ -8,45 +8,198 @@
 
       * {box-sizing: border-box;}
 
-      .one {
-        width: 345px;
-        height: 360px;
-        /* border: 1px solid; */
-        position: relative;
-        justify-content: space-between;
+      .thought {
+        width: 1440px;
+        height: 900px;
+        background-color: yellow;
+
+
       }
 
-      .on {
-        width: 0;
-        height: 100%;
+      .box_one {
+        width: 221px;
+        height: 40px;
         background-color: black;
+        animation-iteration-count: infinite;
+        animation: box_one_move 10s linear infinite;
         position: absolute;
-        left: 0;
-        transition: 10.1s linear;
+        left: 50px;
       }
 
-      .red{
-        background-color: orange;
+      .box_two {
+        width: 221px;
+        height: 40px;
+        background-color: black;
+        animation-iteration-count: infinite;
+        animation: box_two_move 10s linear infinite;
+        position: absolute;
+        left: 90px;
       }
+
+      .box_three {
+        width: 221px;
+        height: 40px;
+        background-color: black;
+        animation-iteration-count: infinite;
+        position: absolute;
+        animation: box_three_move 10s linear infinite;
+        left: 500px;
+      }
+
+      .box_four {
+        width: 221px;
+        height: 40px;
+        background-color: black;
+        animation-iteration-count: infinite;
+        animation: box_four_move 10s linear infinite;
+        position: absolute;
+        left: 900px;
+      }
+
+      .box_five {
+        width: 221px;
+        height: 40px;
+        background-color: black;
+        animation-iteration-count: infinite;
+        animation: box_five_move 10s linear infinite;
+        position: absolute;
+        left: 1100px;
+      }
+
+
+
+      /* .box_three,
+      .box_four,
+      .box_five, */
+
+/*
+      .box_one {
+        animation: box_one_move 5s linear infinite;
+        animation-delay: 0ms;
+        position: relative;
+        left: 50px;
+      } */
+
+      /* .box_two {
+        animation: box_two_move 5s linear infinite;
+        animation-delay: 500ms;
+        position: relative;
+        left: 40px;
+      } */
+
+      /* .box_three {
+        animation: box_one_move 5s linear infinite;
+        animation-delay: 0s;
+        position: relative;
+        left: 100px;
+      }
+
+      .box_four {
+        animation: box_one_move 5s linear infinite;
+        animation-delay: 2s;
+        position: relative;
+        left: 220px;
+      }
+
+      .box_five {
+        animation: box_one_move 5s linear infinite;
+        animation-delay: 5s;
+        position: relative;
+        left: 240px;
+      } */
+
+      @keyframes box_one_move {
+       from {
+         margin-top: -10%;
+       }
+       to {
+         margin-top: 100%;
+       }
+     }
+
+     @keyframes box_two_move {
+      from {
+        margin-top: -40%;
+      }
+      to {
+        margin-top: 100%;
+      }
+    }
+
+    @keyframes box_three_move {
+     from {
+       margin-top: -60%;
+     }
+     to {
+       margin-top: 100%;
+     }
+   }
+
+   @keyframes box_four_move {
+    from {
+      margin-top: -30%;
+    }
+    to {
+      margin-top: 100%;
+    }
+  }
+
+    @keyframes box_five_move {
+     from {
+       margin-top: -90%;
+     }
+     to {
+       margin-top: 100%;
+     }
+   }
+
+
+
+
+     /* keyframes  {
+      from {
+        margin-top: -10%;
+      }
+     to {
+        margin-top: 100%;
+      }
+    } */
+
     </style>
    </head>
 
- <script type="text/javascript">
-     $(document).ready(function(){
 
-     $(".one").click(function(){
-     setTimeout(function(){
-     $(".on, .tw").css({"width":"100%"})
-   }, 400);
-   });
-  })
-  </script>
 
+
+
+
+
+
+   <!-- <script>
+ 	$( document ).ready(function(){
+ 	   setTimeout(function(){
+ 	    $( ".box_one" ).animate({
+        {"+=50px"};
+ 	    });
+ 	  });
+ 	});
+ 		</script> -->
+
+    <!-- <script>
+    $( "#left" ).setTimeout(function() {
+      $( ".box_one" ).animate({ "left": "+=50px" }, "slow" );
+    });
+    </script> -->
 
 
   <body>
-    <div class="one">
-    <div class="one on"></div>
-    <div class="one tw"></div>
-    </div>
+    <!-- <button id="left">&laquo;</button> -->
+<div class="thought">
+  <div class="box_one"></div>
+  <div class="box_two"></div>
+  <div class="box_three"></div>
+  <div class="box_four"></div>
+  <div class="box_five"></div>
+</div>
+
   </body>
