@@ -10,19 +10,21 @@
         box-sizing: border-box;
       }
 
-    .page_one {
-      width: 1440px;
-      height: 60px;
-    }
+      .page_null {
+        width: 1440px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+      }
 
-    .page_two {
+    .page_one {
       width: 1440px;
       height: 390px;
       display: flex;
       justify-content: space-between;
     }
 
-    .page_three {
+    .page_two {
       width: 1440px;
       height: 390px;
       display: flex;
@@ -35,7 +37,9 @@
       height: 390px;
       display: inline-block;
       position: relative;
-      transform: rotate(180deg)
+      transform: rotate(180deg);
+      background-image: url("stylesheets/images/puzzle_one.svg");
+      background-size: 100% auto;
     }
 
     .quarter_two {
@@ -43,7 +47,9 @@
       height: 390px;
       display: inline-block;
       position: relative;
-      transform: rotate(180deg)
+      transform: rotate(180deg);
+      background-image: url("stylesheets/images/puzzle_two.svg");
+      background-size: 100% auto;
     }
 
     .quarter_three {
@@ -51,7 +57,9 @@
       height: 390px;
       display: inline-block;
       position: relative;
-      transform: rotate(180deg)
+      transform: rotate(180deg);
+      background-image: url("stylesheets/images/puzzle_three.svg");
+      background-size: 100% auto;
     }
 
     .quarter_four {
@@ -59,7 +67,9 @@
       height: 390px;
       display: inline-block;
       position: relative;
-      transform: rotate(180deg)
+      transform: rotate(180deg);
+      background-image: url("stylesheets/images/puzzle_four.svg");
+      background-size: 100% auto;
     }
 
     .quarter_five {
@@ -67,7 +77,9 @@
       height: 390px;
       display: inline-block;
       position: relative;
-      transform: rotate(180deg)
+      transform: rotate(180deg);
+      background-image: url("stylesheets/images/puzzle_five.svg");
+      background-size: 100% auto;
     }
 
     .quarter_six {
@@ -75,7 +87,9 @@
       height: 390px;
       display: inline-block;
       position: relative;
-      transform: rotate(180deg)
+      transform: rotate(180deg);
+      background-image: url("stylesheets/images/puzzle_six.svg");
+      background-size: 100% auto;
     }
 
     </style>
@@ -83,7 +97,7 @@
 
   <script type="text/javascript">
   $(document).ready(function() {
-  let rotate = 0;
+  let rotate = 180;
     $(".quarter_one, .quarter_two, .quarter_three, .quarter_four, .quarter_five, .quarter_six").click(function(){rotate += 180;
     $(this).css({"transform": "rotate("+rotate+"deg)"
    });
@@ -94,61 +108,26 @@
 
 
   <body>
+    <div class="page_null">
+    </div>
+
+
     <div class="page_one">
-
-    </div>
-    <div class="page_two">
       <div class="quarter_one">
-        <object
-            type="images"
-            data="puzzle_one.svg">
-           <img src="stylesheets/images/puzzle_one.svg">
-          </object>
       </div>
-
       <div class="quarter_two">
-        <object
-            type="images"
-            data="puzzle_two.svg">
-           <img src="stylesheets/images/puzzle_two.svg">
-          </object>
       </div>
-
       <div class="quarter_three">
-        <object
-            type="images"
-            data="puzzle_three.svg">
-           <img src="stylesheets/images/puzzle_three.svg">
-          </object>
       </div>
     </div>
 
-
-
-
-      <div class="page_three">
-        <div class="quarter_four">
-          <object
-              type="images"
-              data="puzzle_four.svg">
-             <img src="stylesheets/images/puzzle_four.svg">
-            </object>
-        </div>
-
+    <div class="page_two">
+      <div class="quarter_four">
+      </div>
       <div class="quarter_five">
-        <object
-            type="images"
-            data="puzzle_five.svg">
-           <img src="stylesheets/images/puzzle_five.svg">
-          </object>
       </div>
-
       <div class="quarter_six">
-        <object
-            type="images"
-            data="puzzle_six.svg">
-           <img src="stylesheets/images/puzzle_six.svg">
-        </object>
       </div>
-      </div>
+    </div>
+
   </body>
