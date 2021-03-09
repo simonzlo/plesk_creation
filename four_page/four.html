@@ -9,67 +9,195 @@
 
      @import"reset.css";
 
-     .page_five {
+     .page_four {
        width: 1440px;
        height: 810px;
-       background-color: blue;
+       /* background-color: blue; */
      }
 
      .text{
        width: 1440px;
        height: 60px;
-       background-color: yellow;
+       /* background-color: yellow; */
+       display: flex;
 
      }
      .fight{
        width: 1440px;
        height: 720px;
-       background-color: green;
+       /* background-color: green; */
        display: flex;
      }
 
-     .cl1 .cl2, .cl3, .cl4, .cl5, .cl6, .cl7, .cl8, .cl9, .cl10, .cl11, .cl12 {
+     .cl1, .cl2, .cl3, .cl4, .cl5, .cl6, .cl7, .cl8, .cl9, .cl10, .cl11, .cl12  {
        width: 120px;
        height: 720px;
-       background-color: pink;
+       /* background-color: pink; */
      }
+
+     .r1:hover, .r2:hover, .r3:hover, .r4:hover, .r5:hover, .r6:hover, .r7:hover, .r8:hover, .r9:hover, .r10:hover, .r11:hover,
+     .r12:hover, .r13:hover, .r14:hover, .r15:hover, .r16:hover, .r17:hover, .r18:hover, .r19:hover, .r20:hover{
+       border-left: 1px solid black;
+       border-right: 1px solid black;
+
+     }
+
+
+
+      .r1, .r2, .r3, .r4, .r5, .r6, .r7, .r8, .r9, .r10, .r11, .r12, .r13, .r14, .r15, .r16, .r17, .r18, .r19, .r20, .r21, .r22, .r23, .r24, .r25,
+      .r26, .r27, .r28, .r29, .r30, .r31, .r32, .r33, .r34, .r35, .r36, .r37, .r38, .r39, .r40, .r41, .r42, .r43, .r44, .r45, .r46, .r47, .r48
+    {
+       width: 90px;
+       height: 180px;
+       /* background: yellow; */
+       margin: auto;
+       border-bottom: 1px solid black;
+
+     }
+
+     .r1, .r5, .r9, .r13, .r17, .r21, .r25, .r29, .r33, .r37, .r41, .r45
+     {
+       border-top: 1px solid black;
+     }
+
+     .black {
+       background-color: black;
+     }
+
+
+
 
      .end {
        width: 1440px;
        height: 30px;
-       background-color: red;
+       /* background-color: red; */
+       display: flex;
      }
-
 
 
     </style>
 
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $(".r1, .r2, .r3, .r4").click(function(){
+            $(".r3").addClass("black");
+          });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $(".r5, .r6, .r7, .r8").click(function(){
+            $(".r5, .r8").addClass("black");
+          });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $(".r9, .r10, .r11, .r12").click(function(){
+            $(".r9, .r11, .r12").addClass("black");
+          });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $(".r13, .r14, .r15, .r16").click(function(){
+            $(".r14, .r15").addClass("black");
+          });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $(".r17, .r18, .r19, .r20").click(function(){
+            $(".r18").addClass("black");
+          });
+        });
+    </script>
+
+
       <body>
-        <div class="page_five">
+        <div class="page_four">
           <div class="text"></div>
           <div class="fight">
             <div class="cl1">
-              <div id="cl1 r1"></div>
-              <div id="cl2 r1"></div>
-              <div id="cl3 r1"></div>
-              <div id="cl4 r1"></div>
+              <div class="r1"></div>
+              <div class="r2"></div>
+              <div class="r3"></div>
+              <div class="r4"></div>
             </div>
-            <div class="cl2"></div>
-            <div class="cl3"></div>
-            <div class="cl4"></div>
-            <div class="cl5"></div>
-            <div class="cl6"></div>
-            <div class="cl7"></div>
-            <div class="cl8"></div>
-            <div class="cl9"></div>
-            <div class="cl10"></div>
-            <div class="cl11"></div>
-            <div class="cl12"></div>
+            <div class="cl2">
+              <div class="r5"></div>
+              <div class="r6"></div>
+              <div class="r7"></div>
+              <div class="r8"></div>
             </div>
-
-
+            <div class="cl3">
+              <div class="r9"></div>
+              <div class="r10"></div>
+              <div class="r11"></div>
+              <div class="r12"></div>
+            </div>
+            <div class="cl4">
+              <div class="r13"></div>
+              <div class="r14"></div>
+              <div class="r15"></div>
+              <div class="r16"></div>
+            </div>
+            <div class="cl5">
+              <div class="r17"></div>
+              <div class="r18"></div>
+              <div class="r19"></div>
+              <div class="r20"></div>
+            </div>
+            <div class="cl6">
+              <div class="r21"></div>
+              <div class="r22"></div>
+              <div class="r23"></div>
+              <div class="r24"></div>
+            </div>
+            <div class="cl7">
+              <div class="r25"></div>
+              <div class="r26"></div>
+              <div class="r27"></div>
+              <div class="r28"></div>
+            </div>
+            <div class="cl8">
+              <div class="r29"></div>
+              <div class="r30"></div>
+              <div class="r31"></div>
+              <div class="r32"></div>
+            </div>
+            <div class="cl9">
+              <div class="r33"></div>
+              <div class="r34"></div>
+              <div class="r35"></div>
+              <div class="r36"></div>
+            </div>
+            <div class="cl10">
+              <div class="r37"></div>
+              <div class="r38"></div>
+              <div class="r39"></div>
+              <div class="r40"></div>
+            </div>
+            <div class="cl11">
+              <div class="r41"></div>
+              <div class="r42"></div>
+              <div class="r43"></div>
+              <div class="r44"></div>
+            </div>
+            <div class="cl12">
+              <div class="r45"></div>
+              <div class="r46"></div>
+              <div class="r47"></div>
+              <div class="r48"></div>
+            </div>
+            </div>
+            <div class="end">
+            </div>
         </div>
-          <div class="end"></div>
           <!-- <div class="column1">
           </div> -->
         </div>
