@@ -17,12 +17,13 @@
       .box_one {
         width: 221px;
         height: 40px;
-        background-color: black;
+        background-color: transparent;
         animation-iteration-count: infinite;
         animation: box_one_move 10s linear infinite;
         position: absolute;
         left: 50px;
         transform: rotate(40deg);
+        text-align: center;
       }
 
       .box_two {
@@ -116,6 +117,7 @@
 
    .box_one_stop {
      animation-play-state: paused;
+     background: black;
    }
     </style>
 
@@ -123,7 +125,7 @@
     <script type="text/javascript">
         $(document).ready(function(){
           $(".box_one").click(function(){
-            $(".box_one_stop");
+            $(this).addClass("box_one_stop");
           });
         });
     </script>
@@ -134,7 +136,7 @@
 
   <body>
 <div class="thought">
-  <div class="box_one"></div>
+  <div class="box_one">Процесс</div>
   <div class="box_two"></div>
   <div class="box_three"></div>
   <div class="box_four"></div>
