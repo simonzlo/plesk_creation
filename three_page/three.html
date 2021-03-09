@@ -97,13 +97,26 @@
 
   <script type="text/javascript">
   $(document).ready(function() {
-  let rotate = 180;
-    $(".quarter_one, .quarter_two, .quarter_three, .quarter_four, .quarter_five, .quarter_six").click(function(){rotate += 180;
+    $(".quarter_one, .quarter_two, .quarter_three, .quarter_four, .quarter_five, .quarter_six").click(function(){
+      let rotate = 180;
+      // rotate += 180; 
+
     $(this).css({"transform": "rotate("+rotate+"deg)"
    });
  })
 })
   </script>
+
+
+  $(document).ready(function(){
+	$("div").click(function(){
+		$(this).css({
+			width: function(index, value) {
+				return parseFloat (value) +100;
+			}
+		});
+	});
+});
 
   <!-- <script type="text/javascript">
   $(document).ready(function() {
