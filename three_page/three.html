@@ -10,6 +10,9 @@
         box-sizing: border-box;
       }
 
+      @import"reset.css";
+
+
       .page_null {
         width: 1440px;
         height: 60px;
@@ -99,7 +102,7 @@
   $(document).ready(function() {
     $(".quarter_one, .quarter_two, .quarter_three, .quarter_four, .quarter_five, .quarter_six").click(function(){
       let rotate = 180;
-      // rotate += 180; 
+      // rotate += 180;
 
     $(this).css({"transform": "rotate("+rotate+"deg)"
    });
