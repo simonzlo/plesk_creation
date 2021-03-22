@@ -22,11 +22,16 @@
         height: 40px;
         background-color: transparent;
         animation-iteration-count: infinite;
-        animation: box_one_move 10s linear infinite;
+        animation: box_one_move 15s linear infinite;
         position: absolute;
         left: 50px;
         transform: rotate(40deg);
         text-align: center;
+        background-image: url("stylesheets/images/uvekovech.svg");
+        background-size: 100% auto;
+      }
+     .box_one:hover {
+        border: 1px solid black;
       }
 
       .box_two {
@@ -75,28 +80,28 @@
 
       @keyframes box_one_move {
        from {
-         margin-top: -10%;
+         top: -10%;
        }
        to {
-         margin-top: 100%;
+         top: 100%;
        }
      }
 
      @keyframes box_two_move {
       from {
-        margin-top: -40%;
+        top: -40%;
       }
       to {
-        margin-top: 100%;
+        top: 100%;
       }
     }
 
     @keyframes box_three_move {
      from {
-       margin-top: -60%;
+       top: -60%;
      }
      to {
-       margin-top: 100%;
+       top: 100%;
      }
    }
 
@@ -129,6 +134,11 @@
         $(document).ready(function(){
           $(".box_one").click(function(){
             $(this).addClass("box_one_stop");
+            $(this).css({
+  			    top: function(index, value) {
+  				  return parseFloat (value) +10;
+  			}
+  		});
           });
         });
     </script>
@@ -139,7 +149,7 @@
 
   <body>
 <div class="thought">
-  <div class="box_one">Процесс</div>
+  <div class="box_one"></div>
   <div class="box_two"></div>
   <div class="box_three"></div>
   <div class="box_four"></div>
