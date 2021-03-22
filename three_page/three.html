@@ -95,10 +95,14 @@
       background-size: 100% auto;
     }
 
+    .revers {
+      transform: rotate(0deg);
+    }
+
     </style>
   </head>
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
   $(document).ready(function() {
     $(".quarter_one, .quarter_two, .quarter_three, .quarter_four, .quarter_five, .quarter_six").click(function(){
       let rotate = 180;
@@ -119,7 +123,18 @@
 			}
 		});
 	});
-});
+}); -->
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".quarter_one, .quarter_two, .quarter_three, .quarter_four, .quarter_five, .quarter_six").click(function(){
+      $(this).toggleClass('revers');
+     });
+   });
+  </script>
+
+
 
   <!-- <script type="text/javascript">
   $(document).ready(function() {
