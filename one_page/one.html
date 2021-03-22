@@ -15,8 +15,37 @@
       .one_page {
         display: flex;
         width: 1440px;
-        height: 900px
+        height: 900px;
       }
+
+      .text {
+        display: flex;
+        width: 1440px;
+        height: 90px;
+        background-color: green
+      }
+
+      p {
+        font-family: Factor A;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 22px;
+       }
+
+      .text1 {
+        width: 720px;
+        height: 90px;
+        background-color: green;
+        position: relative;
+      }
+      .text2 {
+        width: 720px;
+        height: 90px;
+        background-color: green;
+        position: relative;
+      }
+
 
       .column1, .column2, .column3, .column4  {
         width: 360px;
@@ -56,60 +85,6 @@
   </head>
 
 
-  <!-- <script type="text/javascript">
-    $(document).ready(function() {
-
-        setTimeout(function() {
-          $(".one_in").css({
-            "width": "100%"
-          })
-        }, 1000);
-     })
-  </script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-
-        setTimeout(function() {
-          $(".two_in").css({
-            "width": "100%"
-          })
-        }, 800);
-     })
-  </script> -->
-
-  <!-- <script type="text/javascript">
-    $(document).ready(function() {
-
-        setTimeout(function() {
-          $(".three_in").css({
-            "width": "100%"
-          })
-        }, 600);
-     })
-  </script> -->
-
-  <!-- <script type="text/javascript">
-    $(document).ready(function() {
-
-        setTimeout(function() {
-          $(".four_in").css({
-            "width": "100%"
-          })
-        }, 400);
-     })
-  </script> -->
-<!--
-  <script type="text/javascript">
-    $(document).ready(function() {
-
-        setTimeout(function() {
-          $(".five_in").css({
-            "width": "100%"
-          })
-        }, 200);
-     })
-  </script> -->
   <script type="text/javascript">
     $(document).ready(function() {
         setInterval(function() {
@@ -122,7 +97,7 @@
             }
         })
         } else { $(".one_in").width('100%'); }
-      }, 1100);
+      }, 1600);
 
         $(this).click(function(e){
           $(e.target).children().css({
@@ -147,7 +122,32 @@
             }
         })
         } else { $(".two_in").width('100%'); }
-      }, 900);
+      }, 1300);
+
+        $(this).click(function(e){
+          $(e.target).children().css({
+         width: function(index, value) {
+          return parseFloat (value) - 200
+         }
+        });
+        })
+     })
+  </script>
+
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        setInterval(function() {
+          let wrapper_size = $('.three').width();
+          let three_in_size =  $(".three_in").width();
+          if (three_in_size < wrapper_size || three_in_size == 0) {
+          $(".three_in").css({
+            width: function(index, value) {
+              return parseFloat (value) + 100
+            }
+        })
+        } else { $(".three_in").width('100%'); }
+      }, 1000);
 
         $(this).click(function(e){
           $(e.target).children().css({
@@ -188,31 +188,6 @@
   <script type="text/javascript">
     $(document).ready(function() {
         setInterval(function() {
-          let wrapper_size = $('.three').width();
-          let three_in_size =  $(".three_in").width();
-          if (three_in_size < wrapper_size || three_in_size == 0) {
-          $(".three_in").css({
-            width: function(index, value) {
-              return parseFloat (value) + 100
-            }
-        })
-        } else { $(".three_in").width('100%'); }
-      }, 500);
-
-        $(this).click(function(e){
-          $(e.target).children().css({
-         width: function(index, value) {
-          return parseFloat (value) - 200
-         }
-        });
-        })
-     })
-  </script>
-
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-        setInterval(function() {
           let wrapper_size = $('.four').width();
           let four_in_size =  $(".four_in").width();
           if (four_in_size < wrapper_size || four_in_size == 0) {
@@ -222,7 +197,7 @@
             }
         })
         } else { $(".five_in").width('100%'); }
-      }, 300);
+      }, 400);
 
         $(this).click(function(e){
           $(e.target).children().css({
@@ -263,8 +238,12 @@
 
 
   <body>
+    <div class="text">
+      <div class="text1">Процесс творчества</div>
+      <div class="text2">Кликай на белое пространство пока не поздно</div>
+    </div>
+
     <div class="one_page">
-
       <div class="column1">
         <div class="one">
           <div class="one_in"></div>
@@ -361,75 +340,6 @@
 
 
       </div>
-
-
-<!--
-      <div class="column2">
-        <div class="one_a">
-          <div class="one_in_a"></div>
-        </div>
-
-        <div class="two_a">
-          <div class="two_in_a"></div>
-        </div>
-
-        <div class="three_a">
-          <div class="three_in_a"></div>
-        </div>
-
-        <div class="four_a">
-          <div class="four_in_a"></div>
-        </div>
-
-        <div class="five_a">
-          <div class="five_in_a"></div>
-        </div>
-      </div>
-
-      <div class="column3">
-        <div class="one_c">
-          <div class="one_in_c"></div>
-        </div>
-
-        <div class="two_c">
-          <div class="two_in_c"></div>
-        </div>
-
-        <div class="three_c">
-          <div class="three_in_c"></div>
-        </div>
-
-        <div class="four_c">
-          <div class="four_in_c"></div>
-        </div>
-
-      <div class="five_c">
-        <div class="five_in_c"></div>
-      </div>
-      </div>
-
-
-
-      <div class="column4">
-        <div class="one_c">
-          <div class="one_in_c"></div>
-        </div>
-
-        <div class="two_c">
-          <div class="two_in_c"></div>
-        </div>
-
-        <div class="three_c">
-          <div class="three_in_c"></div>
-        </div>
-
-        <div class="four_c">
-          <div class="four_in_c"></div>
-        </div>
-
-        <div class="five_c">
-          <div class="five_in_c"></div>
-        </div> -->
 
     </div>
   </div>
