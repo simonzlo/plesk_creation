@@ -31,11 +31,7 @@
        height: 720px;
      }
 
-     .r1:hover {
-       border-left: 1px solid black;
-       border-right: 1px solid black;
 
-     }
 
 
 
@@ -54,6 +50,16 @@
      {
        border-top: 1px solid black;
      }
+     .r1:hover {
+       /* border-left: 1px solid black;
+       border-right: 1px solid black; */
+
+       border: 1px solid black;
+
+     }
+     .r1:hover + .r1 {border-top: 0px solid black;}
+     .r1:last-child {border-bottom: 1px solid black;}
+
 
      .black {
        background-color: black;
@@ -111,7 +117,6 @@
           });
         });
     </script>
---------------
     <!-- <script type="text/javascript">
         $(document).ready(function(){
           $(".trigger1").click(function(){
@@ -138,6 +143,9 @@
 
 
       <body>
+        <section>
+
+        </section>
         <div class="page_four">
           <div class="text"></div>
           <div class="fight">
