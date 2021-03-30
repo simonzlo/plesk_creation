@@ -1,0 +1,99 @@
+
+* {box-sizing: border-box;}
+
+
+
+        p {
+          font-family: "Factor A";
+          font-size: 20px
+        }
+
+      .one_page {
+        display: flex;
+        width: 1440px;
+        height: 900px;
+        z-index: auto;
+        position: relative;
+      }
+
+      .text {
+        display: flex;
+        width: 1440px;
+        height: 90px;
+        /* background-color: green; */
+        position: absolute;
+      }
+
+      .text1 {
+        display: flex;
+        width: 720px;
+        height: 90px;
+        /* background-color: green; */
+      }
+
+     .text-a {
+       position: relative;
+       width: 300px;
+       height: 22px;
+       padding: 9px 0px 0px 35px;
+     }
+
+     .img-a {
+       position: relative;
+       width: 128px;
+       height: 55px;
+       padding: 22px 0px 0px 30px;
+       /* background: no-repeat url("stylesheets/images/logo_plesk.svg"); */
+       /* left: 100px;
+       top: 100px; */
+      }
+
+      .text2 {
+        width: 720px;
+        height: 90px;
+        /* background-color: green; */
+        position: relative;
+      }
+
+
+      .text-b {
+        position: relative;
+        width: 900px;
+        height: 22px;
+        padding: 9px 0px 0px 240px;
+      }
+
+
+      .column1, .column2, .column3, .column4  {
+        width: 360px;
+        height: 900px;
+      }
+
+      .one,.one_a, .one_b,
+      .two, .two_a, .two_b,
+      .three, .three_a, .three_b,
+      .four, .four_a, .four_b,
+      .five, .five_a, .five_b, .one_c, .two_c,
+      .three_c, .four_c,
+      .five_c {
+        width: 360px;
+        height: 180px;
+        /* border: 1px solid; */
+        position:relative;
+        border-bottom: 1px solid black;
+      }
+
+      .one_in, .one_in_a, .one_in_b,
+      .two_in, .two_in_a, .two_in_b,
+      .three_in, .three_in_a, .three_in_b,
+      .four_in, .four_in_a, .four_in_b,
+      .five_in, .five_in_a, .five_in_b, .one_in_c, .two_in_c,
+      .three_in_c, .four_in_c,
+      .five_in_c {
+        width: 0;
+        height: 100%;
+        background-color: black;
+        position: absolute;
+        left: 0;
+        transition: 3s linear;
+      }
