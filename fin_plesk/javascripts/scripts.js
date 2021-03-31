@@ -1,7 +1,6 @@
 
 
 // one_page – невозврат
-<script type="text/javascript">
 $(document).ready(function() {
     setInterval(function() {
       let wrapper_size = $('.one').width();
@@ -23,10 +22,8 @@ $(document).ready(function() {
     });
     })
  })
-</script>
 
 
-<script type="text/javascript">
 $(document).ready(function() {
     setInterval(function() {
       let wrapper_size = $('.two').width();
@@ -48,10 +45,8 @@ $(document).ready(function() {
     });
     })
  })
-</script>
 
 
-<script type="text/javascript">
 $(document).ready(function() {
     setInterval(function() {
       let wrapper_size = $('.three').width();
@@ -73,10 +68,8 @@ $(document).ready(function() {
     });
     })
  })
-</script>
 
 
-<script type="text/javascript">
 $(document).ready(function() {
     setInterval(function() {
       let wrapper_size = $('.three').width();
@@ -98,10 +91,8 @@ $(document).ready(function() {
     });
     })
  })
-</script>
 
 
-<script type="text/javascript">
 $(document).ready(function() {
     setInterval(function() {
       let wrapper_size = $('.four').width();
@@ -123,10 +114,8 @@ $(document).ready(function() {
     });
     })
  })
-</script>
 
 
-<script type="text/javascript">
 $(document).ready(function() {
     setInterval(function() {
       let wrapper_size = $('.five').width();
@@ -148,7 +137,6 @@ $(document).ready(function() {
     });
     })
  })
-</script>
 
 
 
@@ -156,7 +144,6 @@ $(document).ready(function() {
 
 
 // two_page – тетрис
-<script type="text/javascript">
     $(document).ready(function(){
       $(".box_one").click(function(){
         $(this).addClass("box_one_stop");
@@ -167,84 +154,67 @@ $(document).ready(function() {
   });
       });
     });
-</script>
 
 
 
 
 
 // three_page – пятнашки
-<script type="text/javascript">
   $(document).ready(function() {
     $(".quarter_one, .quarter_two, .quarter_three, .quarter_four, .quarter_five, .quarter_six").click(function(){
       $(this).toggleClass('revers');
      });
    });
-  </script>
 
 
 
 
   // four_page – сапер
-  <script type="text/javascript">
       $(document).ready(function(){
         $(".trigger1").click(function(){
           $(".target1").addClass("black");
         });
       });
-  </script>
 
-  <script type="text/javascript">
       $(document).ready(function(){
         $(".trigger2").click(function(){
           $(".target2").addClass("black");
         });
       });
-  </script>
 
-  <script type="text/javascript">
       $(document).ready(function(){
         $(".trigger3").click(function(){
           $(".target3").addClass("black");
         });
       });
-  </script>
 
-  <script type="text/javascript">
       $(document).ready(function(){
         $(".trigger4").click(function(){
           $(".target4").addClass("black");
         });
       });
-  </script>
 
-  <script type="text/javascript">
       $(document).ready(function(){
         $(".trigger5").click(function(){
           $(".target5").addClass("black");
         });
       });
-  </script>
-  <!-- <script type="text/javascript">
-      $(document).ready(function(){
-        $(".trigger1").click(function(){
-          $(".target1").addClass("black");
-        });
-      });
-  </script> -->
+  // <!-- <script type="text/javascript">
+  //     $(document).ready(function(){
+  //       $(".trigger1").click(function(){
+  //         $(".target1").addClass("black");
+  //       });
+  //     });
+  // </script> -->
 
-  <script type="text/javascript">
       $(document).ready(function(){
         $(".trigger6").click(function(){
           $(".target6").addClass("black");
         });
       });
-  </script>
 
-  <script type="text/javascript">
       $(document).ready(function(){
         $(".burn1").click(function(){
           $(".r1").addClass("black");
         });
       });
-  </script>
