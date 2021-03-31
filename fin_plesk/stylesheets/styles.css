@@ -3,6 +3,7 @@
 
 
 
+/* <!-- one_page – невозврат --> */
         p {
           font-family: "Factor A";
           font-size: 20px
@@ -96,4 +97,312 @@
         position: absolute;
         left: 0;
         transition: 3s linear;
+      }
+
+
+
+
+
+
+      /* <!-- two_page – тетрис --> */
+        .thought {
+          width: 1440px;
+          height: 900px;
+
+        }
+
+        .box_one {
+          width: 221px;
+          height: 40px;
+          background-color: transparent;
+          animation-iteration-count: infinite;
+          animation: box_one_move 15s linear infinite;
+          position: absolute;
+          left: 50px;
+          transform: rotate(40deg);
+          text-align: center;
+          background-image: url("stylesheets/images/uvekovech.svg");
+          background-size: 100% auto;
+        }
+       .box_one:hover {
+          border: 1px solid black;
+        }
+
+        .box_two {
+          width: 221px;
+          height: 40px;
+          background-color: black;
+          animation-iteration-count: infinite;
+          animation: box_two_move 10s linear infinite;
+          position: absolute;
+          left: 90px;
+          transform: rotate(20deg);
+        }
+
+        .box_three {
+          width: 221px;
+          height: 40px;
+          background-color: black;
+          animation-iteration-count: infinite;
+          position: absolute;
+          animation: box_three_move 10s linear infinite;
+          left: 500px;
+          transform: rotate(-40deg);
+
+        }
+
+        .box_four {
+          width: 221px;
+          height: 40px;
+          background-color: black;
+          animation-iteration-count: infinite;
+          animation: box_four_move 10s linear infinite;
+          position: absolute;
+          left: 900px;
+        }
+
+        .box_five {
+          width: 221px;
+          height: 40px;
+          background-color: black;
+          animation-iteration-count: infinite;
+          animation: box_five_move 10s linear infinite;
+          position: absolute;
+          left: 1100px;
+        }
+
+
+        @keyframes box_one_move {
+         from {
+           top: -10%;
+         }
+         to {
+           top: 100%;
+         }
+       }
+
+       @keyframes box_two_move {
+        from {
+          top: -40%;
+        }
+        to {
+          top: 100%;
+        }
+      }
+
+      @keyframes box_three_move {
+       from {
+         top: -60%;
+       }
+       to {
+         top: 100%;
+       }
+     }
+
+     @keyframes box_four_move {
+      from {
+        margin-top: -30%;
+      }
+      to {
+        margin-top: 100%;
+      }
+    }
+
+      @keyframes box_five_move {
+       from {
+         margin-top: -90%;
+       }
+       to {
+         margin-top: 100%;
+       }
+     }
+
+     .box_one_stop {
+       animation-play-state: paused;
+       background: black;
+     }
+
+
+
+
+
+
+      /* <!-- three_page – пятнашки --> */
+      .page_null {
+        width: 1440px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .page_one {
+        width: 1440px;
+        height: 390px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .page_two {
+        width: 1440px;
+        height: 390px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .quarter_one:hover {
+         border: 1px solid black;
+       }
+
+       .quarter_two:hover {
+          border: 1px solid black;
+        }
+
+        .quarter_three:hover {
+           border: 1px solid black;
+         }
+
+         .quarter_four:hover {
+            border: 1px solid black;
+          }
+
+          .quarter_five:hover {
+             border: 1px solid black;
+           }
+
+           .quarter_six:hover {
+              border: 1px solid black;
+            }
+
+
+      .quarter_one {
+        width: 480px;
+        height: 390px;
+        display: inline-block;
+        position: relative;
+        transform: rotate(180deg);
+        background-image: url("stylesheets/images/puzzle_one.svg");
+        background-size: 100% auto;
+      }
+
+      .quarter_two {
+        width: 480px;
+        height: 390px;
+        display: inline-block;
+        position: relative;
+        transform: rotate(180deg);
+        background-image: url("stylesheets/images/puzzle_two.svg");
+        background-size: 100% auto;
+      }
+
+      .quarter_three {
+        width: 480px;
+        height: 390px;
+        display: inline-block;
+        position: relative;
+        transform: rotate(180deg);
+        background-image: url("stylesheets/images/puzzle_three.svg");
+        background-size: 100% auto;
+      }
+
+      .quarter_four {
+        width: 480px;
+        height: 390px;
+        display: inline-block;
+        position: relative;
+        transform: rotate(180deg);
+        background-image: url("stylesheets/images/puzzle_four.svg");
+        background-size: 100% auto;
+      }
+
+      .quarter_five {
+        width: 480px;
+        height: 390px;
+        display: inline-block;
+        position: relative;
+        transform: rotate(180deg);
+        background-image: url("stylesheets/images/puzzle_five.svg");
+        background-size: 100% auto;
+      }
+
+      .quarter_six {
+        width: 480px;
+        height: 390px;
+        display: inline-block;
+        position: relative;
+        transform: rotate(180deg);
+        background-image: url("stylesheets/images/puzzle_six.svg");
+        background-size: 100% auto;
+      }
+
+      .revers {
+        transform: rotate(0deg);
+      }
+
+
+
+
+
+
+
+
+      /* <!-- four_page – сапер --> */
+      .page_four {
+        width: 1440px;
+        height: 810px;
+      }
+
+      .text{
+        width: 1440px;
+        height: 60px;
+        display: flex;
+
+      }
+      .fight{
+        width: 1440px;
+        height: 720px;
+        display: flex;
+      }
+
+      .cl1 {
+        width: 120px;
+        height: 720px;
+      }
+
+
+       .r1, .r2, .r3, .r4, .r5, .r6, .r7, .r8, .r9, .r10, .r11, .r12, .r13, .r14, .r15, .r16, .r17, .r18, .r19, .r20, .r21, .r22, .r23, .r24, .r25,
+       .r26, .r27, .r28, .r29, .r30, .r31, .r32, .r33, .r34, .r35, .r36, .r37, .r38, .r39, .r40, .r41, .r42, .r43, .r44, .r45, .r46, .r47, .r48
+     {
+        width: 90px;
+        height: 180px;
+        /* background: yellow; */
+        margin: auto;
+        /* border-bottom: 0.5px solid black; */
+
+      }
+
+      .r1, .r5, .r9, .r13, .r17, .r21, .r25, .r29, .r33, .r37, .r41, .r45
+      {
+        border-top: 1px solid black;
+      }
+      .r1:hover {
+        /* border-left: 1px solid black;
+        border-right: 1px solid black; */
+
+        border: 1px solid black;
+
+      }
+      .r1:hover + .r1 {border-top: 0px solid black;}
+      .r1:last-child {border-bottom: 1px solid black;}
+
+
+      .black {
+        background-color: black;
+      }
+
+
+      .end {
+        width: 1440px;
+        height: 30px;
+        /* background-color: red; */
+        display: flex;
       }
