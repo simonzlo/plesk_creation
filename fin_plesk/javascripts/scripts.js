@@ -3,64 +3,50 @@
 // one_page – невозврат
 $(document).ready(function() {
     setInterval(function() {
-      let wrapper_size = $('.one').width();
+      let wrapper_size_1 = $('.one').width();
       let one_in_size =  $(".one_in").width();
-      if (one_in_size < wrapper_size || one_in_size == 0) {
+      if (one_in_size < wrapper_size_1 || one_in_size == 0) {
       $(".one_in").css({
         width: function(index, value) {
           return parseFloat (value) + 100
         }
     })
-    } else { $(".one_in").width('100%'); }
+  } else { $(".one_in").width('101%'); }
   }, 1600);
 
-    $(this).click(function(e){
-      $(e.target).children().css({
-     width: function(index, value) {
-      return parseFloat (value) - 200
-     }
-    });
-    })
  })
 
 
 $(document).ready(function() {
     setInterval(function() {
-      let wrapper_size = $('.two').width();
+      let wrapper_size_2 = $('.two').width();
       let two_in_size =  $(".two_in").width();
-      if (two_in_size < wrapper_size || two_in_size == 0) {
+      if (two_in_size < wrapper_size_2 || two_in_size == 0) {
       $(".two_in").css({
         width: function(index, value) {
           return parseFloat (value) + 100
         }
     })
-    } else { $(".two_in").width('100%'); }
+  } else { $(".two_in").width('101%'); }
   }, 1300);
 
-    $(this).click(function(e){
-      $(e.target).children().css({
-     width: function(index, value) {
-      return parseFloat (value) - 200
-     }
-    });
-    })
  })
 
 
 $(document).ready(function() {
     setInterval(function() {
-      let wrapper_size = $('.three').width();
+      let wrapper_size_3 = $('.three').width();
       let three_in_size =  $(".three_in").width();
-      if (three_in_size < wrapper_size || three_in_size == 0) {
+      if (three_in_size < wrapper_size_3 || three_in_size == 0) {
       $(".three_in").css({
         width: function(index, value) {
           return parseFloat (value) + 100
         }
     })
-    } else { $(".three_in").width('100%'); }
+  } else { $(".three_in").width('101%'); }
   }, 1000);
 
-    $(this).click(function(e){
+    $(".one, .two, .three, .four, .five").click(function(e){
       $(e.target).children().css({
      width: function(index, value) {
       return parseFloat (value) - 200
@@ -70,72 +56,50 @@ $(document).ready(function() {
  })
 
 
-$(document).ready(function() {
-    setInterval(function() {
-      let wrapper_size = $('.three').width();
-      let three_in_size =  $(".three_in").width();
-      if (three_in_size < wrapper_size || three_in_size == 0) {
-      $(".three_in").css({
-        width: function(index, value) {
-          return parseFloat (value) + 100
-        }
-    })
-    } else { $(".three_in").width('100%'); }
-  }, 700);
-
-    $(this).click(function(e){
-      $(e.target).children().css({
-     width: function(index, value) {
-      return parseFloat (value) - 200
-     }
-    });
-    })
- })
-
 
 $(document).ready(function() {
     setInterval(function() {
-      let wrapper_size = $('.four').width();
+      let wrapper_size_4 = $('.four').width();
       let four_in_size =  $(".four_in").width();
-      if (four_in_size < wrapper_size || four_in_size == 0) {
+      if (four_in_size < wrapper_size_4 || four_in_size == 0) {
       $(".four_in").css({
         width: function(index, value) {
           return parseFloat (value) + 100
         }
     })
-    } else { $(".five_in").width('100%'); }
+  } else { $(".four_in").width('101%'); }
   }, 400);
 
-    $(this).click(function(e){
-      $(e.target).children().css({
-     width: function(index, value) {
-      return parseFloat (value) - 100
-     }
-    });
-    })
+    // $(this).click(function(e){
+    //   $(e.target).children().css({
+    //  width: function(index, value) {
+    //   return parseFloat (value) - 100
+    //  }
+    // });
+    // })
  })
 
 
 $(document).ready(function() {
     setInterval(function() {
-      let wrapper_size = $('.five').width();
+      let wrapper_size_5 = $('.five').width();
       let five_in_size =  $(".five_in").width();
-      if (five_in_size < wrapper_size || five_in_size == 0) {
+      if (five_in_size < wrapper_size_5 || five_in_size == 0) {
       $(".five_in").css({
         width: function(index, value) {
           return parseFloat (value) + 100
         }
     })
-    } else { $(".five_in").width('100%'); }
+  } else { $(".five_in").width('101%'); }
   }, 100);
 
-    $(this).click(function(e){
-      $(e.target).children().css({
-     width: function(index, value) {
-      return parseFloat (value) - 200
-     }
-    });
-    })
+    // $(this).click(function(e){
+    //   $(e.target).children().css({
+    //  width: function(index, value) {
+    //   return parseFloat (value) - 200
+    //  }
+    // });
+    // })
  })
 
 
