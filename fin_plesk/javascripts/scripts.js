@@ -121,6 +121,192 @@ $(document).ready(function() {
 
 
 
+    $(document).ready(function(){
+      $(".box_two").click(function(){
+        $(this).addClass("box_two_stop");
+        $(this).css({
+        top: function(index, value) {
+        return parseFloat (value) +10;
+    }
+  });
+      });
+    });
+
+
+    $(document).ready(function(){
+      $(".box_three").click(function(){
+        $(this).addClass("box_three_stop");
+        $(this).css({
+        top: function(index, value) {
+        return parseFloat (value) +10;
+    }
+  });
+      });
+    });
+
+
+
+        $(document).ready(function(){
+          $(".box_four").click(function(){
+            $(this).addClass("box_four_stop");
+            $(this).css({
+            top: function(index, value) {
+            return parseFloat (value) +10;
+        }
+      });
+          });
+        });
+
+
+        $(document).ready(function(){
+          $(".box_five").click(function(){
+            $(this).addClass("box_five_stop");
+            $(this).css({
+            top: function(index, value) {
+            return parseFloat (value) +10;
+        }
+      });
+          });
+        });
+
+
+        // ---------------------
+
+
+        $(document).ready(function(){
+          $(".box_six").click(function(){
+            $(this).addClass("box_six_stop");
+            $(this).css({
+            top: function(index, value) {
+            return parseFloat (value) +10;
+        }
+      });
+          });
+        });
+
+
+
+        $(document).ready(function(){
+          $(".box_seven").click(function(){
+            $(this).addClass("box_seven_stop");
+            $(this).css({
+            top: function(index, value) {
+            return parseFloat (value) +10;
+        }
+      });
+          });
+        });
+
+
+
+
+        $(document).ready(function(){
+          $(".box_eight").click(function(){
+            $(this).addClass("box_eight_stop");
+            $(this).css({
+            top: function(index, value) {
+            return parseFloat (value) +10;
+        }
+      });
+          });
+        });
+
+
+
+        $(document).ready(function(){
+          $(".box_nine").click(function(){
+            $(this).addClass("box_nine_stop");
+            $(this).css({
+            top: function(index, value) {
+            return parseFloat (value) +10;
+        }
+      });
+          });
+        });
+
+
+
+        $(document).ready(function(){
+          $(".box_five").click(function(){
+            $(this).addClass("box_ten_stop");
+            $(this).css({
+            top: function(index, value) {
+            return parseFloat (value) +10;
+        }
+      });
+          });
+        });
+
+
+
+      //
+      //   $(document).ready(function(){
+      //     $(".box_five").click(function(){
+      //       $(this).addClass("box_five_stop");
+      //       $(this).css({
+      //       top: function(index, value) {
+      //       return parseFloat (value) +10;
+      //   }
+      // });
+      //     });
+      //   });
+      //
+      //
+      //
+      //
+      //   $(document).ready(function(){
+      //     $(".box_five").click(function(){
+      //       $(this).addClass("box_five_stop");
+      //       $(this).css({
+      //       top: function(index, value) {
+      //       return parseFloat (value) +10;
+      //   }
+      // });
+      //     });
+      //   });
+      //
+      //
+      //
+      //
+      //   $(document).ready(function(){
+      //     $(".box_five").click(function(){
+      //       $(this).addClass("box_five_stop");
+      //       $(this).css({
+      //       top: function(index, value) {
+      //       return parseFloat (value) +10;
+      //   }
+      // });
+      //     });
+      //   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // three_page – пятнашки
