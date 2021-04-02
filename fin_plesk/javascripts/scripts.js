@@ -182,3 +182,10 @@ $(document).ready(function() {
           $(".r1").addClass("black");
         });
       });
+
+
+      $(document).ready(function(){
+        $(".touch").hover(function(){
+          $(".react").addClass("blacked");
+        });
+      });
