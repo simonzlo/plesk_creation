@@ -465,6 +465,33 @@
         }
 
 
+        /* ----------------------------------------------------------------------------------------- */
+
+
+        .box_ten {
+          width: 146px;
+          height: 40px;
+          background-color: transparent;
+          animation-iteration-count: infinite;
+          animation: box_ten_move 12s linear infinite;
+          position: absolute;
+          left: 800px;
+          transform: rotate(-120deg);
+          text-align: center;
+          background-image: url("images/svoboda.svg");
+          background-size: 100% auto;
+        }
+
+        .box_ten_stop  {
+          animation-play-state: paused;
+          background: black;
+        }
+        .box_ten:hover {
+          border: 1px solid black;
+        }
+
+
+
 
 
 
@@ -584,7 +611,7 @@
 
    @keyframes box_ten_move {
     from {
-      margin-top: -25%;
+      margin-top: -65%;
     }
     to {
       margin-top: 100%;
