@@ -227,7 +227,7 @@ $(document).ready(function() {
 
 
         $(document).ready(function(){
-          $(".box_five").click(function(){
+          $(".box_ten").click(function(){
             $(this).addClass("box_ten_stop");
             $(this).css({
             top: function(index, value) {
