@@ -3,7 +3,11 @@
 
 
 
+
 /* <!-- one_page – невозврат --> */
+
+
+
         p {
           font-family: "Factor A";
           font-size: 20px
@@ -201,12 +205,6 @@
 
 
 
-
-
-
-
-
-
       .column1, .column2, .column3, .column4  {
         width: 25%;
         height: 900px;
@@ -269,6 +267,7 @@
           text-align: center;
           background-image: url("images/process.svg");
           background-size: 100% auto;
+          border: 1px solid white;
         }
         .box_one:hover {
           border: 1px solid black;
@@ -294,6 +293,8 @@
           text-align: center;
           background-image: url("images/nachalo.svg");
           background-size: 100% auto;
+          border: 1px solid white;
+
         }
 
         .box_two_stop  {
@@ -321,6 +322,8 @@
           text-align: center;
           background-image: url("images/uvekovech.svg");
           background-size: 100% auto;
+          border: 1px solid white;
+
         }
 
         .box_three_stop  {
@@ -347,6 +350,8 @@
           text-align: center;
           background-image: url("images/svet_toje.svg");
           background-size: 100% auto;
+          border: 1px solid white;
+
         }
 
         .box_four_stop  {
@@ -375,6 +380,8 @@
           text-align: center;
           background-image: url("images/vuhod_za.svg");
           background-size: 100% auto;
+          border: 1px solid white;
+
         }
 
         .box_five_stop  {
@@ -402,6 +409,8 @@
           text-align: center;
           background-image: url("images/yporstvo.svg");
           background-size: 100% auto;
+          border: 1px solid white;
+
         }
 
         .box_six_stop  {
