@@ -2,6 +2,7 @@
 
 // one_page – невозврат
 $(document).ready(function() {
+
     setInterval(function() {
       let wrapper_size_1 = $('.one').width();
       let one_in_size =  $(".one_in").width();
@@ -170,7 +171,6 @@ $(document).ready(function() {
         });
 
 
-        // ---------------------
 
 
         $(document).ready(function(){
@@ -237,8 +237,8 @@ $(document).ready(function() {
           });
         });
 
-
-
+      //
+      //
       //
       //   $(document).ready(function(){
       //     $(".box_five").click(function(){
@@ -372,6 +372,22 @@ $(document).ready(function() {
 
       $(document).ready(function(){
         $(".touch").hover(function(){
-          $(".react").addClass("blacked");
+          $(".react").toggleClass("blacked");
         });
+        $(".touch").click(function(){
+          location.reload();
+        })
       });
+
+
+
+
+      // five_page – end game
+
+
+
+
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      $(window).scrollTo(0, 0);
